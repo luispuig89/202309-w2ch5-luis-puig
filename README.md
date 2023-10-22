@@ -6,7 +6,7 @@ Deberás de programar el [Juego de la vida de Conway](https://es.wikipedia.org/w
 
 ![Game of life demo](https://www.jakubkonka.com/images/gof.gif)
 
-Un resumen de las reglas:
+Un resumen de las reglas
 
 - Una célula viva sigue las siguientes reglas:
   - Si tiene menos de 2 células contiguas vivas, muere por "soledad".
