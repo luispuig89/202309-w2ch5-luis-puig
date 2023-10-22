@@ -19,8 +19,8 @@ const initialArray = (game) => {
 
 function changeArray(array, game) {
   const newArray = array;
-  for (let y = 0; y < game.height; y++) {
-    for (let x = 0; x < game.width; x++) {
+  for (let y = 0; y <= game.height; y++) {
+    for (let x = 0; x <= game.width; x++) {
       newArray[y][x] = applyRules(array, x, y, game);
     }
   }
@@ -29,12 +29,12 @@ function changeArray(array, game) {
 }
 
 function startGame(array, game) {
-  console.table(array);
   for (let index = 0; index < 1000; index++) {
     setTimeout(() => {
-      // Console.clear();
+      console.clear();
+      console.log(index);
       console.table(changeArray(array, game));
-    }, 500 * index);
+    }, 200 * index);
   }
 }
 
