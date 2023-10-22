@@ -38,5 +38,4 @@ function startGame(array, game) {
   }
 }
 
-// Console.table(initialArray(game));
 startGame(initialArray(game), game);
